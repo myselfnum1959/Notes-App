@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "myFont";
+    src: url('fonts/Anak\ Gedong.ttf');
+    font-weight: normal;
+}
+
+*{
+    font-family: "myFont", sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to left, #FFB1B1, #FFDBB0);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.element {
+  /* For Firefox */
+  scrollbar-width: none;
+  
+  /* For Internet Explorer and Legacy Edge */
+  -ms-overflow-style: none;  
+}
+
+/* For Chrome, Safari, and Opera */
+.element::-webkit-scrollbar {
+  display: none;
+}
+
+.dashboard{
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+}
+
+textarea{
+    resize: none;
+    width: 400px;
+    height: 500px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+h1{
+    color: black;
+    background-color: #FFDBB0;
+    border-radius: 10px;
+    border-color: #FFCCB8;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2)
+}
+
+#save-btn{
+    position: relative;
+    top: 10px;
+    width: 200px;
+    height: 50px;
+    
+    background-image: linear-gradient(to left, #FFFAD3, #FFDBB0);
+    border-color: #FFCCB8;
+}
+
+#note-input{
+    background-image: linear-gradient(to right, #FFDBB0, #FFCCB8);
+    border-color: #FFCCB8;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5)
+}
+
+#clock{
+    font-size: 50px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
